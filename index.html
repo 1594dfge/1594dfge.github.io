@@ -16,7 +16,7 @@
         <script>
             var getUrlString = location.href;
             var url = new URL(getUrlString);
-            string code = url.searchParams.get('code')
+            var code = url.searchParams.get('code')
 
             console.log(code);
             document.getElementById('code').textContent = code; 
