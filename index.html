@@ -11,12 +11,12 @@
         <p></p>
 <!--         <a href="thsportalapp://auth/100" +>android thsportalapp://auth/100</a> -->
 <!--         <p></p> -->
-        <a href="https://1594dfge.github.io/?code=<span id='code'></span>&state=&nonce=" +>ios</a>
+        <a href="https://1594dfge.github.io/?code=<span id='code'/>&state=&nonce=" +>ios</a>
 
         <script>
             var getUrlString = location.href;
             var url = new URL(getUrlString);
-            var code = url.searchParams.get('code')
+            string code = url.searchParams.get('code')
 
             console.log(code);
             document.getElementById('code').textContent = code; 
