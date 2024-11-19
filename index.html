@@ -9,12 +9,31 @@
     <body>
         <h1>App link(Android) Universal link(iOS) 測試</h1>
         <p></p>
-        <a href="https://test.test.test" +>android app link</a>
+        
+<!--         <a href="https://oauth.deeplink.test/" +>android app link</a> -->
+
+        <a href="https://oauth.deeplink.test/" onclick="redirectToOAuth()">android app link</a>
+        
         <script>
-            var getUrlString = location.href;
-            var url = new URL(getUrlString);
-            var code = url.searchParams.get('code')
-            console.log(code);       
+            // var getUrlString = location.href;
+            // var url = new URL(getUrlString);
+            // var code = url.searchParams.get('code')
+            // console.log(code);
+            
+            function redirectToOAuth() {
+            // 获取当前 URL
+            var currentUrl = window.location.href;
+
+            // 解析 URL，获取 `code` 参数
+            var urlParams = new URLSearchParams(currentUrl);
+            var code = urlParams.get('code');
+
+            // 构造新的 URL
+            var newUrl = "https://oauth.deeplink.test/" + code;
+
+            // 重定向到新 URL
+            window.location.href = newUrl;
+}
         </script>
     </body>
 </html>
