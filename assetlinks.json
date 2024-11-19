@@ -1,0 +1,11 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.tunghosteel.thsportal",
+      "sha256_cert_fingerprints":
+        ["07:1E:9B:5A:F0:4F:69:BD:4C:42:15:6F:FF:7C:2D:14:0F:E6:BD:D4:D1:CF:4D:9C:3A:67:72:09:36:2A:05:AE"]
+    }
+  }
+]
