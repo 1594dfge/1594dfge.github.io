@@ -7,7 +7,14 @@
         <title>Document</title>
     </head>
     <body>
-        <h1>登入成功</h1>
-        <p>iOS</p>
+        <h1>App link(Android) Universal link(iOS) 測試</h1>
+        <p></p>
+        <a href="https://1594dfge.github.io/?code=test123&state=&nonce=" +>android app link</a>
+        <script>
+            var getUrlString = location.href;
+            var url = new URL(getUrlString);
+            var code = url.searchParams.get('code')
+            console.log(code);       
+        </script>
     </body>
 </html>
