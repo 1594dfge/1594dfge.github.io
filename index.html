@@ -10,9 +10,7 @@
         <h1>App link(Android) Universal link(iOS) 測試</h1>
         <p></p>
         
-<!--         <a href="https://oauth.deeplink.test/" +>android app link</a> -->
-<!--         <a href="https://oauth.deeplink.test/" onclick="redirectToOAuth()">android app link</a> -->
-        <button onclick="redirectToOAuth()">點擊我</button>
+        <button onclick="redirectToOAuth()">android link test</button>
         
         <script>
             function redirectToOAuth() 
@@ -21,7 +19,8 @@
                 var url = new URL(getUrlString);
                 var code = url.searchParams.get('code')
                 console.log(code);
-                var newUrl = "https://oauth.deeplink.test/" + code;
+                //var newUrl = "https://oauth.deeplink.test/" + code;
+                var newUrl = "https://1594dfge.github.io/" + code;
                 window.location.href = newUrl;
             }
         </script>
