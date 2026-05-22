@@ -1,0 +1,11 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.tunghosteel.eisexpress",
+      "sha256_cert_fingerprints":
+        ["CC:62:F1:C3:04:10:BD:15:97:A0:B9:3A:85:00:7D:96:51:F2:4F:56:4C:AC:54:5F:6E:DC:72:62:3C:57:D0:C8"]
+    }
+  }
+]
