@@ -1,0 +1,24 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["G7U89QURDZ.com.tunghosteel.eisexpress"],
+        "components": [
+          {
+            "/": "/*",
+            "?": {
+              "code": ".*",
+              "state": "*",
+              "nonce": "*"
+            },
+            "comment": "Handle authentication urls"
+          },
+          {
+            "/": "/*",
+            "comment": "Handle all other urls"
+          }
+        ]
+      }
+    ]
+  }
+}
